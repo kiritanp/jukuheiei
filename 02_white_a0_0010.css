@@ -40,10 +40,11 @@
 }
 #menubar{
  margin: 0px;
- padding: 4px 0px 3px;
+ padding: 2px 0px 2px;
+ line-height: 8px;
  background: #ffd700 left top;
  width: auto;
- min-height: 16px;
+ min-height: 14px;
  display: block;
  clear: both;
  font-style: normal;
@@ -435,15 +436,28 @@
 .mainmenu .mainmenuitemcurrent .mainmenuitemlink:visited{
  color: #000000;
 }
-.mainmenu .mainmenuitemlink{
- float: left;
- text-decoration: none;
- margin: 0px;
- white-space: pre;
- text-align: left;
- font-style: normal;
- font-weight: bold;
- padding: 0px 20px;
+.mainmenu .mainmenuitemlink {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px 20px;
+    line-height: 1.2;
+    text-decoration: none;
+    margin: 0px;
+    white-space: pre;
+    text-align: left;
+    font-style: normal;
+    font-weight: bold;
+}
+.mainmenu .mainmenuitemlink {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.mainmenu .mainmenuitemlink:hover {
+    color: #0066cc;
+    text-decoration: underline;
 }
 .mainmenu .mainmenuitemright{
  display: inline;
